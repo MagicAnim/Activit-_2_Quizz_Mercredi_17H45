@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Quizz</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-center text-white font-semibold text-3xl bg-yellow-300  py-2"> Quel Pokémon es-tu ? </h1>
+    </header>
+
+    <main class="mt-6">
+
+        <p class="text-center font-mono text-3xl y-4 py-6">{{question}}</p>
+
+        <ul class="text-center text-xl">
+            <li><a href="/reponse/0">{{reponses[0]}}</a></li>
+            <li><a href="/reponse/1">{{reponses[1]}}</a></li>
+            <li><a href="/reponse/2">{{reponses[2]}}</a></li>
+            <li><a href="/reponse/3">{{reponses[3]}}</a></li>
+        </ul>
+    </main>
+
+    <footer class="w-full fixed bottom-0">
+        <p class="text-center text-white font-semibold text-2xl bg-yellow-300  py-2"> Copyright @ Nintendo </p>
+
+    </footer>
+</body>
+
+</html>
