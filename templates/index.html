@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Quizz</title>
+
 </head>
 <body>
-    
+
     <header>
         <h1 class="text-center text-white font-semibold text-3xl bg-yellow-300  py-2"> Quel Pokémon es-tu ? </h1>
     </header>
 
     <main class="mt-6">
         <p class="text-center font-mono text-2xl y-4 py-6"> Réponds à ce quizz pour découvrir le pokémon qui dort en toi ! </p>
-        <div class="flex justify-center">
-            <img class="h-200" src="/static/pokemons.png">
+        <div class="flex justify-center" onclick="window.location.href='/question';">
+            <img class="h-[200px]" src="/static/pokemons.png">
         </div>
         <div class="flex justify-center py-4 mt-4">
             <a  class="text-white font-bold text-2xl p-3 bg-yellow-300 hover:bg-yellow-400 border border-white rounded-lg" href="/question">Let's go !</a>
